@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> </link>
+
+    </head>
+    
+    <body class ="container">
+
+        <div>
+                <img src="logo.png" alt="logo de la camara de representantes" class="img-rounded"> 
+        
+                <img src="background.jpg"  class="img-fluid"  alt="Responsive image" width="860">
+        
+              </div>
+        <ul class="nav nav-tabs h5">
+                <li class="nav-item">
+                  <a class="nav-link" href="home-starter-page.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Congress 113</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="senate-starter-page.html">Senate</a>
+                    <a class="dropdown-item" href="house-starter-page.html">House</a>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Attendance</a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="senate-attendance-starter-page.html">Senate</a>
+                              <a class="dropdown-item" href="#">House</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Party Loyalty</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="senate-party-loyalty-starter-page.html">Senate</a>
+                          <a class="dropdown-item active" href="#">House</a>
+              </ul>
+   
+
+
+  
+
+        <header>            
+            <div>
+            </div>
+        </header>
+        <!--Table container-->
+        <div class ="container">
+            <div class="row">
+                <div class="col-8">
+            <h2>Party Loyalty</h2>
+            <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda. </p>
+        
+        </div>
+        
+        <div class="col-4">
+            <h2 class="text-center">House at a glance</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Party</th>
+                        <th>Representants</th>
+                        <th>% votes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Republicans</td>
+                        <td class="republicanReps"></td>
+                        <td class ="repuPercent"></td>
+                    </tr>
+                    <tr>
+                        <td>Democrats</td>
+                        <td class="democratReps"></td>
+                        <td class ="demoPercent"></td>
+                    </tr>
+                    <tr>
+                        <td>Independents</td>
+                        <td class="independentReps"></td>
+                        <td class ="indePercent"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <div class="border"></div>
+        <div class= "row">
+            <div class ="col-6">
+        
+            <h2>Least Loyal (Bottom 10% of Party)</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Number Party Votes</th>
+                        <th>% Party Votes</th>
+                    </tr>
+                </thead>
+                <tbody id= leastEng>
+                   
+                </tbody>
+            </table>
+</div>
+<div class="row">
+    <div class ="col ml-3">
+            <h2>Most Loyal (Top 10% of Party)</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Number Party Votes</th>
+                        <th>% Party Votes</th>
+                    </tr>
+                </thead>
+                <tbody id="elBody">
+               
+                </tbody>
+            </table>
+            </div>
+        </div>
+        </div>    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+
+
+        <script type = "text/javascript" src="houseLoyalty.js"> </script>
+        <footer class="page-footer font-small gray">
+
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                  Richard
+                </div>
+                <!-- Copyright -->
+</body>
+</html>
